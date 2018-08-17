@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HUANG,YUTING - Lab Studio</title>
+<link rel="shortcut icon" href="img/huang.ico">
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script src="js/jquery.min.js"></script>
+
+<!-- bxslider -->
+<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+<script src="js/jquery.bxslider.min.js"></script>
+
+<!-- Magnific Popup -->
+<link rel="stylesheet" href="css/magnific-popup.css">
+<script src="js/jquery.magnific-popup.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.bxslider').bxSlider({
+	  mode: 'fade',
+	  captions: true,
+	  controls: false,
+	  auto: true
+	});
+	$('.mgt-campaign-slider').bxSlider({
+		pager: false,
+		nextSelector: '.arrowr',
+		prevSelector: '.arrowl',
+		nextText: '<img src="img/arrowr.png" width="26" height="44">',
+		prevText: '<img src="img/arrowl.png" width="26" height="44">'
+	});
+	$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: true,
+		fixedContentPos: false
+	});
+});
+</script>
+
+<style type="text/css">
+.iris-inside-grid{
+	position: relative;
+	float: left;
+	width: 324px;
+	height: 324px;
+	margin: 0 14px 14px 0;
+	cursor: pointer;
+	}
+.iris-inside-grid.threen{ margin-right: 0; }
+.gimg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 324px;
+	height: 324px;
+	}
+
+.iris-inside-grid-hover{
+	position: absolute;
+	top: 0;
+	left: -99999999px;
+	width: 324px;
+	height: 324px;
+	background: rgba(0,0,0,.6);
+	opacity: 0;
+	transition: opacity 0.4s ease-in-out 0s;
+	}
+.iris-inside-grid:hover .iris-inside-grid-hover{
+	top: 0;
+	left: 0;
+	opacity: 1;
+	}
+.iris-inside-grid-hover .click {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    width: 160px;
+	height: 120px;
+	display: table;
+    margin: -60px 0 0 -80px;
+    color: #FFF;
+	background: rgba(255,196,8,.5);
+	font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    padding: 3px;
+    border: 1px solid #FFF;
+	}
+.iris-inside-grid-hover .click span{
+	display: table-cell;
+	text-align : center;
+	vertical-align : middle;
+	}
+
+
+.mfp-fade.mfp-bg {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
+}
+
+</style>
+</head>
+
+<body>
+<div class="wrap">
+<header> <a href="index.html"><img class="logo" src="img/sign.svg" width="203"></a>
+<nav>
+<ul>
+<li><a href="portfolio.html">portfolio</a>
+    <ul>
+        <li><a href="graphic.html">graphic</a></li>
+        <li><a href="website.html">website</a></li>
+        <li><a href="photo.html">photo</a></li>
+    </ul>
+</li>
+<li><a href="huang.html">huang</a></li>
+<div class="clear"></div>
+</ul>
+</nav>
+<div class="clear"></div>
+</header>
+
+<div class="arrowl"></div>
+<div class="arrowr"></div>
+
+<div class="iris-inside inwrap">
+<div class="iris-inside-list">
+
+<a class="popup-youtube" href="https://www.youtube.com/watch?v=FFnrkq6T-rs">
+<div class="iris-inside-grid">
+<img class="gimg" src="img/film.png" width="324" height="324">
+<div class="iris-inside-grid-hover">
+<div class="click">
+<span>
+click to view<br/>
+/<br/>
+The Curious Case of Benjamin Button
+</span>
+</div>
+</div><!--iris-inside-grid-hover-->
+</div><!--iris-inside-grid-->
+</a>
+
+<div class="iris-inside-grid">
+<img class="gimg" src="img/concert_s.png" width="324" height="324">
+<div class="iris-inside-grid-hover">
+<div class="click">
+<span>
+click to view<br/>
+/<br/>
+Music Concert
+</span>
+</div>
+</div><!--iris-inside-grid-hover-->
+</div><!--iris-inside-grid-->
+
+<div class="iris-inside-grid threen">
+<img class="gimg" src="img/cis.png" width="324" height="324">
+<div class="iris-inside-grid-hover">
+<div class="click">
+<span>
+click to view<br/>
+/<br/>
+FE-amart Corporate Identify System
+</span>
+</div>
+</div><!--iris-inside-grid-hover-->
+</div><!--iris-inside-grid-->
+<div class="clear"></div>
+</div><!--iris-inside-list-->
+
+</div>
+
+<div id="foot">
+<div id="social">
+<ul id="media">
+<li><a href="#" target="_blank"><img src="img/social-01.svg" width="25" height="25" alt="facebook"></a></li>
+<li><a href="#" target="_blank"><img src="img/social-02.svg" width="25" height="25" alt="ig"></a></li>
+<li><a href="#" target="_blank"><img src="img/social-03.svg" width="25" height="25" alt="youtube"></a></li>
+<li><a href="#" target="_blank"><img src="img/social-04.svg" width="25" height="25" alt="twitter"></a></li>
+<div class="clear"></div>
+</ul>
+</div><!--social media-->
+<div id="footer">
+©2015 Lab Studio.<br/>
+All rights reserved.
+</div><!--footer-->
+</div><!--foot-->
+
+<div id="clear"></div>
+</div><!--wrap-->
+</body>
+</html>
