@@ -1,0 +1,141 @@
+html, body, #wrap {}
+body{ min-width: 1280px; font-family: Arial, Helvetica, sans-serif; line-height: 1.5; }
+
+.clear{ clear:both;}
+a img {border: 0px;}
+a {
+	text-decoration: none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	}
+a:hover {text-decoration: none;}
+.banner{ margin: 0 auto; }
+
+@font-face {
+    font-family: JennaSue;
+    src: url(../JennaSue.ttf);
+}
+
+.wrap{ position: relative; width: 1000px; margin: auto; }
+.inwrap{ border-bottom: 1px solid #eee; }
+
+header{ margin: 50px auto; }
+.logo{ float: left; }
+nav ul{
+	float: right;
+	margin-top: 23px;
+	list-style: none;
+	font-family: 'Handlee', cursive;
+	font-size: 18px;
+	letter-spacing: -.0005em;
+	color: #333;
+	}
+nav ul li{ position: relative; float: left; }
+nav ul li a{ padding: 15px; text-decoration: none; color: #333; }
+nav ul li a:hover{ text-decoration: none; color: #FFC408; }
+
+nav ul li ul{
+	display: none;
+	/*position: absolute;
+	top: -99999999px;
+	right: 50%;
+	width: 240px;
+	padding: 5px;
+	margin: 0 -120px 0 0;
+	opacity: 0;
+	transition: opacity 0.4s ease-in-out 0s;*/
+	}
+/*nav ul li ul li a:hover{ text-decoration: none; color: #FFC408; }
+nav ul li:hover ul{ top: 100%; opacity: 1; }*/
+
+.arrowl{ position:fixed; top:50%; margin-top:-22px; left:40px; }
+.arrowr {position:fixed; top:50%; margin-top:-22px; right:40px; }
+
+footer{
+	position: absolute;
+	width: 1000px;
+	min-height: 136px;
+	bottom: -136px;
+	background: #fff;
+	z-index: 999999;
+	}
+#footer {
+	font-family: "Times New Roman", Times, serif;
+	text-align: right;
+	font-size: 13px;
+	line-height: 1.5;
+	letter-spacing: .1em;
+	padding: 40px 0;
+	}
+
+.iris-index-slider-wrapper{ padding-bottom: 40px; }
+
+
+/*----------------------------------- huang -----------------------------------*/
+.iris-huang .name{
+	color: #333;
+	font-size: 24px;
+	font-weight: bold;
+	}
+.iris-huang .position{
+	color: #aaa;
+	font-size: 13px;
+	margin-bottom: 25px;
+	}
+.column{ float: left; width: 475px; }
+.column.left{ margin-right: 50px; }
+
+.subtitle{
+	font-size: 15px;
+	line-height: 2;
+	border-bottom: 1px dashed #333;
+	margin-right: 30px;
+	}
+.essay{
+	color: #888;
+	text-align: justify;
+	margin: 20px 0 40px;
+	font-size: 13px;
+	}
+.third{ color: #999; margin-bottom: 15px; }
+
+.essay p{
+	margin-bottom: 1em;
+	}
+
+.skill .software{ float: left; width: 175px; }
+.skill .level{ float: left; }
+.skill .level .dot{
+	position: relative;
+	float: left;
+	width: 15px;
+	height: 15px;
+	background: #DADAD9;
+	margin: 4px 1px 0;
+	}
+.skill .level .dot.active{ background: #575756; }
+.skill .level .dot img{ position: absolute; top: 0; left: 0; }
+
+.essay .year{ float: left; color: #555; font-size: 120px; font-weight: bold; line-height: 1; }
+.essay .works{ float: left; margin: 50px 0 0 10px; }
+
+.essay .edu{
+	position: relative;
+	width: 450px;
+	height: 180px;
+	padding: 0 0 0 25px;
+	background: url(../img/eduline.svg) no-repeat;
+	background-size: contain;
+	line-height: 1.3;
+	}
+.essay .edu .master, .essay .edu .bachelor{ position: absolute; }
+.essay .edu .master{ top: 42px; }
+.essay .edu .bachelor{ top: 122px; }
+
+.essay .habits{ margin: 0 5px 5px 0; }
+
+
+/*----------------------------------- graphic -----------------------------------*/
+
