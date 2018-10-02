@@ -1,87 +1,94 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>HUANG,YUTING - Lab Studio</title>
-<link rel="shortcut icon" href="img/huang.ico">
-<link rel="stylesheet" type="text/css" href="css/reset.css" />
-<link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.bxslider.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-	$('.bxslider').bxSlider({
-	  mode: 'fade',
-	  captions: true,
-	  controls: false,
-	  auto: true
-	});
-	$('.iris-index-slider').bxSlider({
-		mode: 'fade',
-		pager: false,
-		auto: true,
-		nextSelector: '.arrowr',
-		prevSelector: '.arrowl',
-		nextText: '<img src="img/arrowr.png" width="26" height="44">',
-		prevText: '<img src="img/arrowl.png" width="26" height="44">'
-	});
-});
-</script>
-<style type="text/css">
-</style>
-</head>
-
-<body>
-<div class="wrap">
-<header> <a href="index.html"><img class="logo" src="img/sign.svg" width="203"></a>
-<nav>
-<ul>
-<li><a href="portfolio.html">portfolio</a>
-    <ul>
-        <li><a href="graphic.html">graphic</a></li>
-        <li><a href="website.html">website</a></li>
-        <li><a href="photo.html">photo</a></li>
-    </ul>
-</li>
-<li><a href="huang.html">huang</a></li>
-<div class="clear"></div>
-</ul>
-</nav>
-<div class="clear"></div>
-</header>
-
-<div class="arrowl"></div>
-<div class="arrowr"></div>
-
-<div class="iris-index-slider-wrapper inwrap">
-	<div class="iris-index-slider">
-		<div class="mgt-campaign-slider-item">
-			<a href="#"><img src="img/4-2.png" alt=""></a>
-		</div>
-		<div class="mgt-campaign-slider-item">
-			<a href="#"><img src="img/1.png" alt=""></a>
-		</div>
-		<div class="mgt-campaign-slider-item">
-			<a href="#"><img src="img/2.png" alt=""></a>
-		</div>
-		<div class="mgt-campaign-slider-item">
-			<a href="#"><img src="img/3.png" alt=""></a>
-		</div>
-	</div>
-</div>
-
-<div class="clear"></div>
-
-<footer>
-<div id="footer">
-© 2015 HUANG,YUTING Lab Studio.<br/>
-All rights reserved.
-</div><!--footer-->
-</footer>
-
-<div class="clear"></div>
-</div><!--wrap-->
-</body>
+<!DOCTYPE html>
+	<html lang="zh-tw">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<title>Document</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body class="huang">
+		<nav>
+			<div class="container">
+				<div class="ham-block">
+					<div class="ham">
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+					</div>
+					<ul class="list">
+						<li><a href="huang.html">履歷</a></li>
+						<li><a href="work.html">作品</a></li>
+					</ul>
+				</div>
+				<a href="index.html" class="logo"><i class="icon-sign"></i></a>
+				<span></span>
+			</div>
+		</nav>
+		<header>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="container">
+						<div class="visual-block">
+							<img src="img/index-layer-blank@3x.png" width="100%" alt="">
+							<img class="visual-1" src="img/index-layer-1@3x.png" width="100%" alt="">
+							<img class="visual-2" src="img/index-layer-2@3x.png" width="100%" alt="">
+							<img class="visual-3" src="img/index-layer-3@3x.png" width="100%" alt="">
+							<img class="visual-4" src="img/index-layer-4@3x.png" width="100%" alt="">
+							<img class="visual-5" src="img/index-layer-5@3x.png" width="100%" alt="">
+							<div class="enter">
+								<a href="huang.html" class="enter-link">enter</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p>
+							copyright © 2018 Huang, Yu-Ting
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/data.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+			$(window).mousemove(function(e) {
+				var change;
+				var xpos=e.clientX;
+				var ypos=e.clientY;
+				var left= change*20;
+				var xpos=xpos*2;
+					ypos=ypos*2;
+				$('.visual-1').css({
+					'top': ((0+(ypos/50))+"px"),
+					'left': ((0+(xpos/80))+"px")
+				});
+				$('.visual-2').css({
+					'top': ((0+(ypos/40))+"px"),
+					'left': ((0+(xpos/60))+"px")
+				});
+				$('.visual-3').css({
+					'top': ((0+(ypos/30))+"px"),
+					'left': ((0+(xpos/50))+"px")
+				});
+				$('.visual-4').css({
+					'top': ((0+(ypos/40))+"px"),
+					'left': ((0+(xpos/60))+"px")
+				});
+				$('.visual-5').css({
+					'top': ((0+(ypos/20))+"px"),
+					'left': ((0+(xpos/40))+"px")
+				});
+			});
+		</script>
+	</body>
 </html>
