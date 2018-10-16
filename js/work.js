@@ -87,7 +87,7 @@ var work = [
 		"title": "<span>Margot-bag Official Website</span><span class='sub'>已下架，提供靜態網頁</span>",
 		"alt": "Margot-bag Official Website",
 		"num": "margot",
-		"link": "#",
+		"link": "https://hwangiris.github.io/margot/margot.html",
 		"detail": "<li>設計</li><li class='active'>切版</li><li class='active'>程式</li>"
 	},
 	{
