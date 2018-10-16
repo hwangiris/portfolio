@@ -25,7 +25,7 @@ $(document).ready(function(){
 			workCt += "<div class='text'>";
 			workCt += "<div class='h4'>" + work[j].title + "</div>";
 			workCt += "<ul>" + work[j].detail + "</ul>";
-			workCt += "<a id='" + work[j].num + "' target='_blank' href='" + work[j].link + "/' class='btn'>前往頁面</a>";
+			workCt += "<a id='" + work[j].num + "' target='_blank' href='" + work[j].link + "' class='btn'>前往頁面</a>";
 			workCt += "</div></div></div>";
 		};
 		$(".grid-block").html(workCt);
