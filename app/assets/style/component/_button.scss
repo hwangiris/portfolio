@@ -1,0 +1,120 @@
+button,
+a {
+  padding: 0;
+  align-self: baseline;
+  background-color: transparent;
+  border-radius: 0;
+  appearance: none;
+  outline: 0;
+  &:focus {
+    outline: 0;
+  }
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  overflow: hidden;
+  z-index: 0;
+  cursor: pointer;
+  > span {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    animation: ripples 1s linear infinite;
+    z-index: -1;
+  }
+  &:disabled,
+  &[disabled]{
+    cursor: not-allowed;
+  }
+  &.btn-outlined,
+  &.btn-contained {
+    min-width: 115px;
+    padding: 0.6875rem 1rem;
+    font-size: $h4;
+    font-weight: 500;
+    line-height: 1.25;
+    border: 2px solid;
+    @include media-breakpoint-up(sm) {
+      min-width: 135px;
+    }
+    @include media-breakpoint-up(md) {
+      min-width: 140px;
+      padding: 0.875rem 1rem;
+    }
+    &.btn-large {
+      min-width: 180px;
+      padding: 0.8rem 1rem 0.923rem;
+      line-height: 1.5;
+    }
+    &.btn-small {
+      min-width: 72px;
+      padding: 0.7rem 1rem;
+      line-height: 1;
+    }
+    > span {
+      background-color: $red-100;
+    }
+  }
+  &.btn-outlined {
+    color: $black;
+    border-color: $black;
+    &:hover {
+      color: $primary;
+      border-color: $primary;
+    }
+    &:disabled,
+    &[disabled]{
+      color: $gray-200;
+      border-color: $gray-200;
+    }
+  }
+  &.btn-contained {
+    color: $white;
+    background-color: $black;
+    border-color: $black;
+    &:hover {
+      background-color: $primary;
+      border-color: $primary;
+    }
+    &:disabled,
+    &[disabled]{
+      color: $white;
+      border-color: $gray-200;
+      background-color: $gray-200;
+    }
+  }
+  &.btn-large {
+    font-size: $h3;
+  }
+  &.btn-small {
+    font-size: $h5;
+  }
+}
+
+.btn-link {
+  color: $surface;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-thickness: from-font;
+  &:hover {
+    color: $primary-variant;
+  }
+}
+
+@keyframes ripples {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 1;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+}
