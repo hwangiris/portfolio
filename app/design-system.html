@@ -1,0 +1,103 @@
+---
+title: 《天下雜誌》設計系統
+layout: ./app/blank.ejs
+engine: ejs
+current: design-system
+
+year: 2022
+name: '《天下雜誌》設計系統'
+intro: '為了減少跨職位、部門、甚至是外包的溝通，讓大家對畫面的想像一致、溝通無分歧，所以建立屬於天下的一套網站設計系統。定義產品整體的設計，由一組共享的、整合的元素及原則所組成，讓設計跟開發可以模組化，統一 UI 元件及微互動方式一致性。'
+link: 'https://www.cw.com.tw/design-system/'
+service: ['專案統籌', '前端工程', 'Vue.js']
+participate: ['UI 設計師', '平面設計師']
+---
+
+<article>
+  <div class="container">
+    <div class="row">
+      <div class="mockup-with-video">
+        <img src="assets/images/desktop-mockup.jpg" width="100%" alt="MBP Mockup">
+        <div class="ratio">
+          <video src="assets/images/design-system/overall-page.mp4" loop autoplay muted></video>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <h2 class="text-surface mt-40 mb-20">
+          我想要解決什麼？
+        </h2>
+        <div class="row mb-40">
+          <div class="col-md-4">
+            <h3 class="mt-0 mb-10">一致性</h3>
+            <ul class="my-0">
+              <li>UI 元件及互動⽅式相同</li>
+              <li>維持產品的連貫性</li>
+              <li>幫助建立品牌風格</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3 class="mt-0 mb-10">效率性</h3>
+            <ul class="my-0">
+              <li>設計元件庫</li>
+              <li>隨時使⽤元件、同步更新</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3 class="mt-0 mb-10">跨部門語言</h3>
+            <ul class="my-0">
+              <li>減少來回溝通或落差</li>
+            </ul>
+          </div>
+        </div>
+        <h2 class="text-surface mt-40 mb-20">
+          互動示範區
+        </h2>
+        <p>
+          第〇版公司主要用於產品部門使用，設計系統可以解決上述想解決的問題，但是這個頁面的互動性、加值服務較少。在第一版公開釋出的版本上，選擇比較多狀態、規則複雜的元件上，如文字框、頁碼等，新增了互動示範區。
+        </p>
+      </div>
+    </div>
+    <ul class="list-reset d-flex align-items-center justify-content-center mt-40 mb-20">
+      <li>
+        <button
+          type="button"
+          data-id="interactive"
+          data-src="assets/images/design-system/interactive-demo-ui.mp4"
+          class="btn-change btn btn-small btn-contained"
+        >UI</button></li>
+      <li>
+        <button
+          type="button"
+          data-id="interactive"
+          data-src="assets/images/design-system/interactive-demo-code.mp4"
+          class="btn-change btn btn-small btn-outlined"
+        >Code</button></li>
+    </ul>
+    <div class="row">
+      <div class="mockup-with-video">
+        <img src="assets/images/desktop-mockup.jpg" width="100%" alt="MBP Mockup">
+        <div class="ratio">
+          <video src="assets/images/design-system/interactive-demo-ui.mp4" loop autoplay muted id="interactive"></video>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12">
+            <hr class="my-40">
+            <strong class="label d-inline-block h5 text-secondary-variant mt-0 mb-5">同場加映</strong>
+            <h2 class="text-surface mt-0 mb-20">
+              建立屬於自己的 Figma 元件庫
+            </h2>
+            <p>
+              除了程式一致化，設計也一同製作 Figma Libraries 供使用。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="assets/images/design-system/figma-component.png" width="100%" alt="figma textfield component">
+  </div>
+</article>

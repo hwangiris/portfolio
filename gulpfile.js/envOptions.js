@@ -11,8 +11,8 @@ let envOptions = {
     src: [
       `${srcPath}/**/*`,
       `!${srcPath}/assets/js/**/*.js`,
-      `!${srcPath}/assets/style/**/*.scss`,
-      `!${srcPath}/assets/style/**/*.sass`,
+      `!${srcPath}/assets/sass/**/*.scss`,
+      `!${srcPath}/assets/sass/**/*.sass`,
       `!${srcPath}/**/*.ejs`,
       `!${srcPath}/**/*.html`,
     ],
@@ -29,10 +29,10 @@ let envOptions = {
   },
   style: {
     src: [
-      `${srcPath}/assets/style/**/*.scss`,
-      `${srcPath}/assets/style/**/*.sass`,
+      `${srcPath}/assets/sass/**/*.scss`,
+      `${srcPath}/assets/sass/**/*.sass`,
     ],
-    path: `${distPath}/assets/style`,
+    path: `${distPath}/assets/css`,
   },
   javascript: {
     src: [
