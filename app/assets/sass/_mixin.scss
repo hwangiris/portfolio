@@ -9,7 +9,7 @@
   list-style: $style;
 }
 
-@mixin beforeafter($content, $display) {
+@mixin beforeafter($content: '', $display: block) {
   content: $content;
   display: $display;
 }

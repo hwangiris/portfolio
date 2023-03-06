@@ -1,0 +1,40 @@
+.card-group {
+  row-gap: 20px;
+  > * {
+    @include media-breakpoint-up(sm) {
+      padding-left: (1.25rem / 2);
+      padding-right: (1.25rem / 2);
+    }
+  }
+}
+
+.card-item {
+  position: relative;
+  border: 1px solid $gray-100;
+  overflow: hidden;
+  .card-img {
+    max-width: 100%;
+    transform: scale(1);
+    transition: transform 0.5s cubic-bezier(0, 0.2, 0.4, 1);
+    @at-root :hover#{&} {
+      transform: scale(1.1);
+    }
+  }
+  .card-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: $white;
+    padding: 10px;
+    background-color: rgba($black, .7);
+    opacity: 0;
+    transition: opacity 0.3s;
+    @at-root :hover#{&} {
+      opacity: 1;
+    }
+  }
+}
