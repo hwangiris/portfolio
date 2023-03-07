@@ -89,7 +89,20 @@ hr {
 
 .mockup-with-video {
   position: relative;
-  background-color: #0b0f1c;
+  background-color: #f8f8f8;
+  &::before {
+    @include beforeafter;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    mix-blend-mode: darken;
+    @at-root .future-city #{&} {
+      background-color: #eaedf7;
+      opacity: 0.5;
+    }
+  }
   > img {
     user-select: none;
     @include media-breakpoint-up(sm) {
