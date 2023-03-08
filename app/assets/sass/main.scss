@@ -98,10 +98,7 @@ hr {
     top: 0;
     left: 0;
     mix-blend-mode: darken;
-    @at-root .future-city #{&} {
-      background-color: #eaedf7;
-      opacity: 0.5;
-    }
+    opacity: 0.5;
   }
   > img {
     user-select: none;
@@ -125,11 +122,20 @@ hr {
     mask-size: cover;
     transform: translateX(-49.9%);
     overflow: hidden;
+    @at-root .inline-mode#{&} {
+      width: 70.5%;
+    }
     @include media-breakpoint-up(sm) {
       width: 53.5%;
+      @at-root .inline-mode#{&} {
+        width: 56.5%;
+      }
     }
     @include media-breakpoint-up(md) {
       width: 50%;
+      @at-root .inline-mode#{&} {
+        width: 51.6%;
+      }
     }
     &::before {
       @include beforeafter;
@@ -147,3 +153,17 @@ hr {
   }
 }
 
+.mockup-with-code {
+  background-color: #f8f8f8;
+  > img {
+    user-select: none;
+    @include media-breakpoint-up(sm) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    @include media-breakpoint-up(md) {
+      padding-left: 6.5%;
+      padding-right: 6.5%;
+    }
+  }
+}

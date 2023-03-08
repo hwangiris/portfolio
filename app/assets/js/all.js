@@ -16,7 +16,9 @@
 $('.btn-change').on('click', function () {
   const id = $(this).attr('data-id');
   const src = $(this).attr('data-src');
+  const poster = $(this).attr('data-poster');
   $(this).removeClass('btn-outlined').addClass('btn-contained');
   $(this).parent().siblings().children().addClass('btn-outlined').removeClass('btn-contained');
-  $(`#${id}`).attr('src', src)
+  $(`#${id}`).attr('src', src);
+  $(`#${id}`).attr('poster', poster);
 });

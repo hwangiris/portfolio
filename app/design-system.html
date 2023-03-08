@@ -18,7 +18,11 @@ participate: ['UI 設計師', '平面設計師']
       <div class="mockup-with-video">
         <img src="assets/images/desktop-mockup.jpg" width="100%" alt="MBP Mockup">
         <div class="ratio">
-          <video src="assets/images/design-system/overall-page.mp4" loop autoplay muted></video>
+          <video
+            src="assets/images/design-system/overall-page.mp4"
+            poster="assets/images/design-system/overall-page.png"
+            loop autoplay muted playsinline
+          ></video>
         </div>
       </div>
     </div>
@@ -56,34 +60,34 @@ participate: ['UI 設計師', '平面設計師']
         <p>
           第〇版公司主要用於產品部門使用，設計系統可以解決上述想解決的問題，但是這個頁面的互動性、加值服務較少。在第一版公開釋出的版本上，選擇比較多狀態、規則複雜的元件上，如文字框、頁碼等，新增了互動示範區。
         </p>
-      </div>
-    </div>
-    <ul class="list-reset d-flex align-items-center justify-content-center mt-40 mb-20">
-      <li>
-        <button
-          type="button"
-          data-id="interactive"
-          data-src="assets/images/design-system/interactive-demo-ui.mp4"
-          class="btn-change btn btn-small btn-contained"
-        >UI</button></li>
-      <li>
-        <button
-          type="button"
-          data-id="interactive"
-          data-src="assets/images/design-system/interactive-demo-code.mp4"
-          class="btn-change btn btn-small btn-outlined"
-        >Code</button></li>
-    </ul>
-    <div class="row">
-      <div class="mockup-with-video">
-        <img src="assets/images/desktop-mockup.jpg" width="100%" alt="MBP Mockup">
-        <div class="ratio">
-          <video src="assets/images/design-system/interactive-demo-ui.mp4" loop autoplay muted id="interactive"></video>
+        <ul class="list-reset d-flex align-items-center justify-content-center mt-40 mb-20">
+          <li>
+            <button
+              type="button"
+              data-id="interactive"
+              data-src="assets/images/design-system/interactive-demo-ui.mp4"
+              data-poster="assets/images/design-system/interactive-demo-ui.png"
+              class="btn-change btn btn-small btn-contained"
+            >UI</button></li>
+          <li>
+            <button
+              type="button"
+              data-id="interactive"
+              data-src="assets/images/design-system/interactive-demo-code.mp4"
+              data-poster="assets/images/design-system/interactive-demo-code.png"
+              class="btn-change btn btn-small btn-outlined"
+            >Code</button></li>
+        </ul>
+        <div class="mockup-with-video inline-mode">
+          <img src="assets/images/desktop-mockup.jpg" width="100%" alt="MBP Mockup">
+          <div class="ratio">
+            <video
+              src="assets/images/design-system/interactive-demo-ui.mp4"
+              poster="assets/images/design-system/interactive-demo-ui.png"
+              loop autoplay muted playsinline id="interactive"
+            ></video>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-md-10">
         <div class="row">
           <div class="col-12">
             <hr class="my-40">
@@ -92,12 +96,12 @@ participate: ['UI 設計師', '平面設計師']
               建立屬於自己的 Figma 元件庫
             </h2>
             <p>
-              除了程式一致化，設計也一同製作 Figma Libraries 供使用。
+              除了程式一致化，也一同製作 Figma Libraries 供使用。
             </p>
+            <img src="assets/images/design-system/figma-component.png" width="100%" alt="figma textfield component">
           </div>
         </div>
       </div>
     </div>
-    <img src="assets/images/design-system/figma-component.png" width="100%" alt="figma textfield component">
   </div>
 </article>
