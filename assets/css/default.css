@@ -92,7 +92,7 @@ svg path {
   .col-text h4 {
     line-height: 1.25; }
     .col-text h4 .display-1 {
-      font-size: calc((100vw - 80px) / 6); }
+      font-size: calc((100vw - 80px) / 6.25); }
       @media (min-width: 1024px) {
         .col-text h4 .display-1 {
           font-size: calc((50vw - 120px) / 6.5); } }
@@ -100,7 +100,7 @@ svg path {
         .col-text h4 .display-1 {
           font-size: calc((50vw - 120px) / 7); } }
     .col-text h4 .display-2 {
-      font-size: calc((100vw - 80px) / 12); }
+      font-size: calc((100vw - 80px) / 12.5); }
       @media (min-width: 1024px) {
         .col-text h4 .display-2 {
           font-size: calc((50vw - 120px) / 13); } }
