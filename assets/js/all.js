@@ -17,8 +17,10 @@
 $('.btn-change').on('click', function () {
   var id = $(this).attr('data-id');
   var src = $(this).attr('data-src');
+  var poster = $(this).attr('data-poster');
   $(this).removeClass('btn-outlined').addClass('btn-contained');
   $(this).parent().siblings().children().addClass('btn-outlined').removeClass('btn-contained');
   $("#".concat(id)).attr('src', src);
+  $("#".concat(id)).attr('poster', poster);
 });
 //# sourceMappingURL=all.js.map

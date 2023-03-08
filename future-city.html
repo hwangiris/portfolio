@@ -33,7 +33,7 @@
             </div>
             <div class="col-md-9 col-sm-8 mb-20">
               <h3 class="h5 text-secondary my-0">網站</h3>
-              <a href="https://futurecity.cw.com.tw/" target="_blank" rel="noopener noreferrer" class="btn btn-link text-decoration">
+              <a href="https://futurecity.cw.com.tw/" target="_blank" rel="noopener noreferrer" class="btn-link text-decoration">
                 https://futurecity.cw.com.tw/
               </a>
             </div>
@@ -88,7 +88,11 @@
       <div class="mockup-with-video">
         <img src="assets/images/desktop-mockup.jpg" width="100%" alt="MBP Mockup">
         <div class="ratio">
-          <video src="assets/images/future-city/overall-page.mp4" loop autoplay muted></video>
+          <video
+            src="assets/images/future-city/overall-page.mp4"
+            poster="assets/images/future-city/overall-page.png"
+            loop autoplay muted playsinline
+          ></video>
         </div>
       </div>
     </div>
@@ -97,29 +101,25 @@
         <h2 class="text-surface mt-40 mb-20">
           首次嘗試
         </h2>
-        <p>
-          第一次整個網站都使用 Vue 寫，很多寫法要邊做邊翻文件。<br/>
-          第一次要研究怎麼樣將廣告代碼填入，並可以利用頻道分眾投放。<br/>
-          第一次因為要串接會員，學習 axios 攔截器，自動更新 Token。<br/>
-        </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="mockup-with-video">
-        <img src="assets/images/desktop-mockup.jpg" width="100%" alt="MBP Mockup">
-        <div class="ratio">
-          <img src="assets/images/future-city/validation.png" width="100%" alt="">
-        </div>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-md-10">
-        <div class="h5 text-secondary mt-10 mb-0">萬惡的會員流程，做的時候很苦但也學到最多的</div>
+        <ul class="list-reset my-20">
+          <li>第一次整個網站都使用 Vue 寫，很多寫法要邊做邊翻文件</li>
+          <li>第一次要研究怎麼樣將廣告代碼填入，並可以利用頻道分眾投放</li>
+          <li>第一次要串接會員驗證，學習 JWT 與 axios 攔截器，自動更新 Token</li>
+        </ul>
+        <img src="assets/images/future-city/validation.jpg" width="100%" alt="">
+        <div class="h5 text-secondary mt-10 mb-0">萬惡的會員驗證機制，做的時候很苦但也學到最多的</div>
       </div>
     </div>
   </div>
 </article>
 
+    <div class="container mt-40 pt-40">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <a href="portfolio.html" class="btn btn-outlined">Back</a>
+        </div>
+      </div>
+    </div>
   </main>
 
   <script src="./assets/js/vendors.js"></script>
