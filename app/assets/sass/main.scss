@@ -24,6 +24,19 @@
   @include listreset();
 }
 
+.rounded-circle {
+  border-radius: 50%;
+}
+
+.col-md-200 {
+  @include media-breakpoint-up(md) {
+    width: 130px;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 200px;
+  }
+}
+
 ul.icon-list {
   a {
     position: relative;
@@ -82,7 +95,7 @@ ul.menu-list {
 
 hr {
   border: 0;
-  border-bottom: 1px solid $gray-300;
+  border-bottom: 1px solid $gray-200;
 }
 
 @import "card";

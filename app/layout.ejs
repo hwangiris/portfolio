@@ -1,25 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:locale" content="zh_TW" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="<%- title %>" />
+  <meta property="og:image" content="assets/images/<%- current %>/cover.jpg" />
+  <meta property="og:site_name" content="黃 昱婷" />
   <title><%- title %>－黃 昱婷</title>
-  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
   <header class="py-40">
-    <div class="container d-flex flex-column align-items-center gap-20">
-      <a href="index.html" class="logo mx-auto text-center">
-        <h3 class="h2 my-0">黃昱婷</h3>
-        <div class="h6 my-0">前端開發者</div>
+    <div class="container">
+      <a href="portfolio.html" class="btn btn-link">
+        <i class="h1 icon-arrow-left"></i>
       </a>
     </div>
   </header>
 
-  <%- contents %>
+  <main class="<%- current %> pb-40 mb-40">
+    <div class="container mb-20">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-12 mb-20">
+              <h1 class="my-0"><%- name %></h1>
+            </div>
+            <div class="col-md-9 col-sm-8 mb-20">
+              <h3 class="h5 text-secondary my-0">網站</h3>
+              <a href="<%- link %>" target="_blank" rel="noopener noreferrer" class="btn-link text-decoration">
+                <%- link %>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-4 mb-20">
+              <h3 class="h5 text-secondary my-0">年份</h3>
+              <div><%- year %></div>
+            </div>
+            <div class="col-md-9 col-sm-8 mb-20">
+              <h3 class="h5 text-secondary my-0">介紹</h3>
+              <div><%- intro %></div>
+            </div>
+            <div class="col-md-3 col-sm-4 mb-20">
+              <h3 class="h5 text-secondary my-0">參與角色</h3>
+              <ul class="list-reset d-flex flex-wrap">
+                <% for(var i=0; i < service.length; i++) { %>
+                  <% if(i === (service.length-1)) { %>
+                    <li><%= service[i] %></li>
+                  <% } else { %>
+                    <li><%= service[i] %>、</li>
+                  <% } %>
+                <% } %>
+              </ul>
+              <% if(participate[0] !== '') { %>
+                <h3 class="h5 text-secondary mb-0">其他參與角色</h3>
+                <ul class="list-reset d-flex flex-wrap">
+                  <% for(var i=0; i < participate.length; i++) { %>
+                    <% if(i === (participate.length-1)) { %>
+                      <li><%= participate[i] %></li>
+                    <% } else { %>
+                      <li><%= participate[i] %>、</li>
+                    <% } %>
+                  <% } %>
+                </ul>
+              <% } %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- contents %>
+    <div class="container mt-40 pt-40">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <a href="portfolio.html" class="btn btn-outlined">Back</a>
+        </div>
+      </div>
+    </div>
+  </main>
 
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
