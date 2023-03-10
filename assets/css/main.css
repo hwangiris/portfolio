@@ -343,8 +343,7 @@ html {
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
-  scroll-behavior: smooth;
-  background-color: #171717; }
+  scroll-behavior: smooth; }
 
 body {
   display: -webkit-box;
@@ -4403,6 +4402,9 @@ h6,
     .h6 {
       font-size: 0.75rem; } }
 
+h1.display-1 {
+  font-size: 2.5rem; }
+
 @font-face {
   font-family: "portfolio";
   src: url("../fonts/portfolio.eot?1kkfrx");
@@ -4915,6 +4917,17 @@ a {
   padding: 0;
   list-style: none; }
 
+.rounded-circle {
+  border-radius: 50%; }
+
+@media (min-width: 1024px) {
+  .col-md-200 {
+    width: 130px; } }
+
+@media (min-width: 1280px) {
+  .col-md-200 {
+    width: 200px; } }
+
 ul.icon-list a {
   position: relative;
   padding: 10px;
@@ -4969,7 +4982,7 @@ ul.menu-list a {
 
 hr {
   border: 0;
-  border-bottom: 1px solid #939EA7; }
+  border-bottom: 1px solid #D3D5D7; }
 
 .card-group {
   row-gap: 20px; }
