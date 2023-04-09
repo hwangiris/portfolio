@@ -4801,7 +4801,7 @@ a {
     font-size: 0.875rem; }
 
 .btn-link {
-  color: #171717; }
+  color: currentColor; }
   .btn-link:hover {
     color: #D60C18; }
   .btn-link.text-decoration {
@@ -5117,5 +5117,20 @@ hr {
       .mockup-with-code > img {
         padding-left: 6.5%;
         padding-right: 6.5%; } }
+
+.ratio-3by2 {
+  position: relative; }
+  .ratio-3by2::before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 66.6666666667%; }
+  .ratio-3by2 > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-width: 0; }
 
 /*# sourceMappingURL=main.css.map */
