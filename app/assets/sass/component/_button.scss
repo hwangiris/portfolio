@@ -97,7 +97,7 @@ a {
 }
 
 .btn-link {
-  color: $black;
+  color: currentColor;
   &:hover {
     color: $primary;
   }
