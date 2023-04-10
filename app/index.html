@@ -11,7 +11,11 @@ current: index
   <div class="container-fluid h-md-100">
     <div class="row h-md-100">
       <div class="col-cover col-md-6 p-0 h-md-100">
-        <img src="assets/images/cover.jpg" alt="">
+        <picture>
+          <source type="image/avif" srcset="assets/images/cover.avif" />
+          <source type="image/webp" srcset="assets/images/cover.webp" />
+          <img src="assets/images/cover.jpg" width="100%" loading="lazy" alt="黃 昱婷">
+        </picture>
       </div>
       <div class="col-text col-md-6 d-flex flex-column">
         <h1 class="my-0">黃 昱婷</h1>

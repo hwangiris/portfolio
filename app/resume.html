@@ -28,7 +28,11 @@ current: resume
             </div>
           </div>
           <div class="col-md-2 col-4 mt-sm-0 mt-20">
-            <img src="assets/images/portrait/portrait.jpg" class="rounded-circle" width="100%" alt="黃昱婷履歷圖">
+            <picture>
+              <source type="image/avif" srcset="assets/images/portrait.avif" />
+              <source type="image/webp" srcset="assets/images/portrait.webp" />
+              <img src="assets/images/portrait.jpg" class="rounded-circle" width="100%" loading="lazy" alt="黃昱婷履歷圖">
+            </picture>
           </div>
         </div>
         <hr class="mt-40 mb-0">

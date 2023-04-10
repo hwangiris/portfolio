@@ -16,11 +16,17 @@ participate: ['']
   <div class="container">
     <div class="row">
       <div class="mockup-with-video">
-        <img src="assets/images/desktop-mockup.jpg" width="100%" alt="MBP Mockup">
+        <div class="ratio-mockup">
+          <picture>
+            <source type="image/avif" srcset="assets/images/desktop-mockup.avif" />
+            <source type="image/webp" srcset="assets/images/desktop-mockup.webp" />
+            <img src="assets/images/desktop-mockup.jpg" width="100%" loading="lazy" alt="MBP Mockup">
+          </picture>
+        </div>
         <div class="ratio">
           <video
             src="assets/images/restaurant/overall-page.mp4"
-            poster="assets/images/restaurant/overall-page.png"
+            poster="assets/images/restaurant/overall-page.jpg"
             loop autoplay muted playsinline
           ></video>
         </div>

@@ -103,6 +103,14 @@ hr {
 .mockup-with-video {
   position: relative;
   background-color: #f8f8f8;
+  @include media-breakpoint-up(sm) {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  @include media-breakpoint-up(md) {
+    padding-left: 13.375%;
+    padding-right: 13.375%;
+  }
   &::before {
     @include beforeafter;
     width: 100%;
@@ -113,22 +121,26 @@ hr {
     mix-blend-mode: darken;
     opacity: 0.5;
   }
-  > img {
-    user-select: none;
-    @include media-breakpoint-up(sm) {
-      padding-left: 10%;
-      padding-right: 10%;
+  .ratio-mockup {
+    position: relative;
+    &::before {
+      @include beforeafter;
+      width: 100%;
+      padding-top: calc(1233 / 1600 * 100%);
     }
-    @include media-breakpoint-up(md) {
-      padding-left: 13.375%;
-      padding-right: 13.375%;
+    > picture {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
   }
   .ratio {
     position: absolute;
     top: 18.7%;
     left: 50%;
-    width: 63.5%;
+    width: 64%;
     mask-image: url(../images/desktop-mockup-mask.png);
     mask-position: center center;
     mask-repeat: no-repeat;
@@ -136,18 +148,19 @@ hr {
     transform: translateX(-49.9%);
     overflow: hidden;
     @at-root .inline-mode#{&} {
-      width: 70.5%;
+      top: 18.8%;
+      width: 70.7%;
     }
     @include media-breakpoint-up(sm) {
-      width: 53.5%;
+      width: 56.2%;
       @at-root .inline-mode#{&} {
-        width: 56.5%;
+        width: 56.3%;
       }
     }
     @include media-breakpoint-up(md) {
-      width: 50%;
+      width: 51.7%;
       @at-root .inline-mode#{&} {
-        width: 51.6%;
+        width: 51.8%;
       }
     }
     &::before {
