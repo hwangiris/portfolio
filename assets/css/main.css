@@ -4996,19 +4996,30 @@ hr {
   border: 1px solid #EEEEEE;
   overflow: hidden; }
   .card-item .card-img {
-    max-width: 100%;
-    -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-            transform: scale(1);
-    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0, 0.2, 0.4, 1);
-    transition: -webkit-transform 0.5s cubic-bezier(0, 0.2, 0.4, 1);
-    -o-transition: transform 0.5s cubic-bezier(0, 0.2, 0.4, 1);
-    transition: transform 0.5s cubic-bezier(0, 0.2, 0.4, 1);
-    transition: transform 0.5s cubic-bezier(0, 0.2, 0.4, 1), -webkit-transform 0.5s cubic-bezier(0, 0.2, 0.4, 1); }
-    :hover.card-item .card-img {
-      -webkit-transform: scale(1.1);
-          -ms-transform: scale(1.1);
-              transform: scale(1.1); }
+    position: relative; }
+    .card-item .card-img::before {
+      content: "";
+      display: block;
+      width: 100%;
+      padding-top: 100%; }
+    .card-item .card-img img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+              transform: scale(1);
+      -webkit-transition: -webkit-transform 0.5s cubic-bezier(0, 0.2, 0.4, 1);
+      transition: -webkit-transform 0.5s cubic-bezier(0, 0.2, 0.4, 1);
+      -o-transition: transform 0.5s cubic-bezier(0, 0.2, 0.4, 1);
+      transition: transform 0.5s cubic-bezier(0, 0.2, 0.4, 1);
+      transition: transform 0.5s cubic-bezier(0, 0.2, 0.4, 1), -webkit-transform 0.5s cubic-bezier(0, 0.2, 0.4, 1); }
+      :hover.card-item .card-img img {
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1); }
   .card-item .card-text {
     position: absolute;
     bottom: 0;
@@ -5036,6 +5047,14 @@ hr {
 .mockup-with-video {
   position: relative;
   background-color: #f8f8f8; }
+  @media (min-width: 768px) {
+    .mockup-with-video {
+      padding-left: 10%;
+      padding-right: 10%; } }
+  @media (min-width: 1024px) {
+    .mockup-with-video {
+      padding-left: 13.375%;
+      padding-right: 13.375%; } }
   .mockup-with-video::before {
     content: "";
     display: block;
@@ -5046,24 +5065,24 @@ hr {
     left: 0;
     mix-blend-mode: darken;
     opacity: 0.5; }
-  .mockup-with-video > img {
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none; }
-    @media (min-width: 768px) {
-      .mockup-with-video > img {
-        padding-left: 10%;
-        padding-right: 10%; } }
-    @media (min-width: 1024px) {
-      .mockup-with-video > img {
-        padding-left: 13.375%;
-        padding-right: 13.375%; } }
+  .mockup-with-video .ratio-mockup {
+    position: relative; }
+    .mockup-with-video .ratio-mockup::before {
+      content: "";
+      display: block;
+      width: 100%;
+      padding-top: calc(1233 / 1600 * 100%); }
+    .mockup-with-video .ratio-mockup > picture {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
   .mockup-with-video .ratio {
     position: absolute;
     top: 18.7%;
     left: 50%;
-    width: 63.5%;
+    width: 64%;
     -webkit-mask-image: url(../images/desktop-mockup-mask.png);
             mask-image: url(../images/desktop-mockup-mask.png);
     -webkit-mask-position: center center;
@@ -5077,17 +5096,18 @@ hr {
             transform: translateX(-49.9%);
     overflow: hidden; }
     .inline-mode.mockup-with-video .ratio {
-      width: 70.5%; }
+      top: 18.8%;
+      width: 70.7%; }
     @media (min-width: 768px) {
       .mockup-with-video .ratio {
-        width: 53.5%; }
+        width: 56.2%; }
         .inline-mode.mockup-with-video .ratio {
-          width: 56.5%; } }
+          width: 56.3%; } }
     @media (min-width: 1024px) {
       .mockup-with-video .ratio {
-        width: 50%; }
+        width: 51.7%; }
         .inline-mode.mockup-with-video .ratio {
-          width: 51.6%; } }
+          width: 51.8%; } }
     .mockup-with-video .ratio::before {
       content: "";
       display: block;

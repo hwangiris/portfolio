@@ -87,11 +87,17 @@
   <div class="container">
     <div class="row">
       <div class="mockup-with-video">
-        <img src="assets/images/desktop-mockup.jpg" width="100%" alt="MBP Mockup">
+        <div class="ratio-mockup">
+          <picture>
+            <source type="image/avif" srcset="assets/images/desktop-mockup.avif" />
+            <source type="image/webp" srcset="assets/images/desktop-mockup.webp" />
+            <img src="assets/images/desktop-mockup.jpg" width="100%" loading="lazy" alt="MBP Mockup">
+          </picture>
+        </div>
         <div class="ratio">
           <video
             src="assets/images/design-system/overall-page.mp4"
-            poster="assets/images/design-system/overall-page.png"
+            poster="assets/images/design-system/overall-page.jpg"
             loop autoplay muted playsinline
           ></video>
         </div>
@@ -137,7 +143,7 @@
               type="button"
               data-id="interactive"
               data-src="assets/images/design-system/interactive-demo-ui.mp4"
-              data-poster="assets/images/design-system/interactive-demo-ui.png"
+              data-poster="assets/images/design-system/interactive-demo-ui.jpg"
               class="btn-change btn btn-small btn-contained"
             >UI</button></li>
           <li>
@@ -145,16 +151,22 @@
               type="button"
               data-id="interactive"
               data-src="assets/images/design-system/interactive-demo-code.mp4"
-              data-poster="assets/images/design-system/interactive-demo-code.png"
+              data-poster="assets/images/design-system/interactive-demo-code.jpg"
               class="btn-change btn btn-small btn-outlined"
             >Code</button></li>
         </ul>
         <div class="mockup-with-video inline-mode">
-          <img src="assets/images/desktop-mockup.jpg" width="100%" alt="MBP Mockup">
+          <div class="ratio-mockup">
+            <picture>
+              <source type="image/avif" srcset="assets/images/desktop-mockup.avif" />
+              <source type="image/webp" srcset="assets/images/desktop-mockup.webp" />
+              <img src="assets/images/desktop-mockup.jpg" width="100%" loading="lazy" alt="MBP Mockup">
+            </picture>
+          </div>
           <div class="ratio">
             <video
               src="assets/images/design-system/interactive-demo-ui.mp4"
-              poster="assets/images/design-system/interactive-demo-ui.png"
+              poster="assets/images/design-system/interactive-demo-ui.jpg"
               loop autoplay muted playsinline id="interactive"
             ></video>
           </div>
@@ -169,7 +181,11 @@
             <p>
               除了程式一致化，也一同製作 Figma Libraries 供使用，同時提升 Mockup 一致化及製作速度。
             </p>
-            <img src="assets/images/design-system/figma-component.png" width="100%" alt="figma textfield component">
+            <picture>
+              <source type="image/avif" srcset="assets/images/design-system/figma-component.avif" />
+              <source type="image/webp" srcset="assets/images/design-system/figma-component.webp" />
+              <img src="assets/images/design-system/figma-component.jpg" width="100%" loading="lazy" alt="figma textfield component">
+            </picture>
           </div>
         </div>
       </div>

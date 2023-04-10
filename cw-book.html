@@ -87,9 +87,19 @@
   <div class="container">
     <div class="row">
       <div class="mockup-with-video">
-        <img src="assets/images/desktop-mockup.jpg" width="100%" alt="MBP Mockup">
+        <div class="ratio-mockup">
+          <picture>
+            <source type="image/avif" srcset="assets/images/desktop-mockup.avif" />
+            <source type="image/webp" srcset="assets/images/desktop-mockup.webp" />
+            <img src="assets/images/desktop-mockup.jpg" width="100%" loading="lazy" alt="MBP Mockup">
+          </picture>
+        </div>
         <div class="ratio">
-          <video src="assets/images/cw-book/overall-page.mp4" loop autoplay muted playsinline></video>
+          <video
+            src="assets/images/cw-book/overall-page.mp4"
+            poster="assets/images/cw-book/overall-page.jpg"
+            loop autoplay muted playsinline
+          ></video>
         </div>
       </div>
     </div>
@@ -102,7 +112,11 @@
           第二次使用 Nuxt.js，已經能熟悉使用 emit 及 props 跨元件溝通傳遞。並學習 plugins 整合 VueComponent 及 Nuxt context，使用 context 與 inject 兩個參數自動注入。
         </p>
         <div class="mockup-with-code">
-          <img src="assets/images/cw-book/helper.png" width="100%" alt="helper 管理">
+          <picture>
+            <source type="image/avif" srcset="assets/images/cw-book/helper.avif" />
+            <source type="image/webp" srcset="assets/images/cw-book/helper.webp" />
+            <img src="assets/images/cw-book/helper.jpg" width="100%" loading="lazy" alt="helper 管理">
+          </picture>
         </div>
         <div class="h5 text-secondary mt-10 mb-0">將重複使用 function 集中管理</div>
       </div>

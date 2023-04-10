@@ -87,11 +87,17 @@
   <div class="container">
     <div class="row">
       <div class="mockup-with-video">
-        <img src="assets/images/desktop-mockup.jpg" width="100%" alt="MBP Mockup">
+        <div class="ratio-mockup">
+          <picture>
+            <source type="image/avif" srcset="assets/images/desktop-mockup.avif" />
+            <source type="image/webp" srcset="assets/images/desktop-mockup.webp" />
+            <img src="assets/images/desktop-mockup.jpg" width="100%" loading="lazy" alt="MBP Mockup">
+          </picture>
+        </div>
         <div class="ratio">
           <video
             src="assets/images/future-city/overall-page.mp4"
-            poster="assets/images/future-city/overall-page.png"
+            poster="assets/images/future-city/overall-page.jpg"
             loop autoplay muted playsinline
           ></video>
         </div>
@@ -107,8 +113,12 @@
           <li>第一次要研究怎麼樣將廣告代碼填入，並可以利用頻道分眾投放</li>
           <li>第一次要串接會員驗證，學習 JWT 與 axios 攔截器，自動更新 Token</li>
         </ul>
-        <img src="assets/images/future-city/validation.jpg" width="100%" alt="">
-        <div class="h5 text-secondary mt-10 mb-0">萬惡的會員驗證機制，做的時候很苦但也學到最多的</div>
+        <picture>
+          <source type="image/avif" srcset="assets/images/future-city/validation.avif" />
+          <source type="image/webp" srcset="assets/images/future-city/validation.webp" />
+          <img src="assets/images/future-city/validation.jpg" width="100%" loading="lazy" alt="會員驗證機制">
+        </picture>
+        <div class="h5 text-secondary mt-10 mb-0">會員驗證機制，做的時候很苦但也學到最多的</div>
       </div>
     </div>
   </div>

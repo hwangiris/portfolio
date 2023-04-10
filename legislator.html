@@ -83,11 +83,17 @@
   <div class="container">
     <div class="row">
       <div class="mockup-with-video">
-        <img src="assets/images/desktop-mockup.jpg" width="100%" alt="MBP Mockup">
+        <div class="ratio-mockup">
+          <picture>
+            <source type="image/avif" srcset="assets/images/desktop-mockup.avif" />
+            <source type="image/webp" srcset="assets/images/desktop-mockup.webp" />
+            <img src="assets/images/desktop-mockup.jpg" width="100%" loading="lazy" alt="MBP Mockup">
+          </picture>
+        </div>
         <div class="ratio">
           <video
             src="assets/images/legislator/overall-page.mp4"
-            poster="assets/images/legislator/overall-page.png"
+            poster="assets/images/legislator/overall-page.jpg"
             loop autoplay muted playsinline
           ></video>
         </div>
@@ -102,7 +108,11 @@
           稱不上是前端的身份參與下，開始研究怎麼讀取肥大的資料又不影響載入及互動速度，並能正常切換資料。將原本一大包的資料拆分成較小的檔案，並利用候選人姓名 mapping，測試過程中發現有同名同姓的候選人造成資料錯誤 <del class="text-secondary">（業界俗成許淑華之亂）</del>，因此後期加上政黨一起比對，解決錯誤。
         </p>
         <div class="mockup-with-code">
-          <img src="assets/images/legislator/json.png" width="100%" alt="資料表">
+          <picture>
+            <source type="image/avif" srcset="assets/images/legislator/json.avif" />
+            <source type="image/webp" srcset="assets/images/legislator/json.webp" />
+            <img src="assets/images/legislator/json.jpg" width="100%" loading="lazy" alt="資料表">
+          </picture>
         </div>
         <div class="h5 text-secondary mt-10 mb-0">由於不支援 JSON，只好包裝成 JavaScript 資料引用</div>
         <div class="row">
@@ -120,11 +130,15 @@
               組成專案合作小組，主打互動地圖，參與網站規劃、視覺設計等。除了縣市首長外，本次選舉也得益於公投議題，獲得很大的關注。
             </p>
             <div class="mockup-with-video inline-mode mt-20">
-              <img src="assets/images/desktop-mockup.jpg" width="100%" alt="MBP Mockup">
+              <picture>
+                <source type="image/avif" srcset="assets/images/desktop-mockup.avif" />
+                <source type="image/webp" srcset="assets/images/desktop-mockup.webp" />
+                <img src="assets/images/desktop-mockup.jpg" width="100%" loading="lazy" alt="MBP Mockup">
+              </picture>
               <div class="ratio">
                 <video
                   src="assets/images/legislator/election2018.mp4"
-                  poster="assets/images/legislator/election2018.png"
+                  poster="assets/images/legislator/election2018.jpg"
                   loop autoplay muted playsinline id="interactive"
                 ></video>
               </div>
