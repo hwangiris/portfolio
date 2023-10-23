@@ -3,7 +3,7 @@ a {
   padding: 0;
   align-self: baseline;
   background-color: transparent;
-  border-radius: 0;
+  border-radius: $radius;
   appearance: none;
   outline: 0;
   &:focus {

@@ -10,6 +10,7 @@
 
 .card-item {
   position: relative;
+  border-radius: $radius;
   border: 1px solid $gray-100;
   overflow: hidden;
   .card-img {
