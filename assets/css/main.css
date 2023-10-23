@@ -4722,7 +4722,7 @@ a {
   -ms-flex-item-align: baseline;
       align-self: baseline;
   background-color: transparent;
-  border-radius: 0;
+  border-radius: 0.875rem;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -4993,6 +4993,7 @@ hr {
 
 .card-item {
   position: relative;
+  border-radius: 0.875rem;
   border: 1px solid #EEEEEE;
   overflow: hidden; }
   .card-item .card-img {
